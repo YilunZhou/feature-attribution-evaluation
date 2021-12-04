@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>Feature Attribution Evaluation</title>
+
+    <style>
+          /* Set your aspect ratio */
+      .video-container {
+      position: relative;
+      overflow: hidden;
+      height: 0;
+      padding-bottom: 56.25%; /* creates a 16:9 aspect ratio */
+      text-align: center;
+      width: 800px;
+      max-width: 100%;
+      margin: 0 auto;
+      }
+
+      .video-container iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      }
+
+      /* And set the max-width of the parent element */
+      .video-wrap {
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center; margin-bottom: 5px; margin-top: 30px;">Do Feature Attribution Methods Correctly Attribute Features?</h2>
+    <h5 style="text-align: center; margin-bottom: 5px; margin-top: 20px;">
+      <a href="https://yilun.scripts.mit.edu/">Yilun Zhou<sup>1</sup></a>,
+      <a href="http://www.slbooth.com/">Serena Booth<sup>1</sup></a>,
+      <a href="https://homes.cs.washington.edu/~marcotcr/">Marco Tulio Ribeiro<sup>2</sup></a>,
+      <a href="https://interactive.mit.edu/">Julie Shah<sup>1</sup></a>
+    </h5>
+    <h6 style="text-align: center; margin-bottom: 5px; margin-top: 10px;">
+      <sup>1 </sup>MIT CSAIL, <sup>2 </sup>Microsoft Research
+    </h6>
+    <h6 style="text-align: center; margin-bottom: 5px; margin-top: 10px;">
+      [<a href="https://arxiv.org/pdf/2104.14403.pdf">Full Paper</a>] &nbsp;&nbsp;
+      <!-- [<a href="">Appendix</a>] &nbsp;&nbsp;
+      [<a href="">Poster</a>] &nbsp;&nbsp; -->
+      [<a href="https://github.com/YilunZhou/feature-attribution-evaluation">GitHub Repo</a>]
+    </h6>
+    <h6 style="text-align: center; margin-bottom: 15px; margin-top: 10px;">AAAI 2022</h6>
+
+    <div class="container">
+
+      <center>
+        <div class="video-wrap">
+          <div class='col col-12 video-container'>
+            <iframe src="https://www.youtube.com/embed/kAodFw6jvvo"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </center>
+
+      <div class='col col-12'>
+        <p style="text-align: justify; text-justify: inter-word;">
+          <b>TLDR:</b> We "unit test" several popular feature attribution algorithms for CV and NLP models to see
+          if they can identify features known to be highly important to model predictions; (un)surprisingly, they
+          mostly can't.
+        </p>
+        <p style="text-align: justify; text-justify: inter-word;">
+          <b>Abstract:</b> Feature attribution methods are exceedingly popular in interpretable machine learning.
+          They aim to compute the attribution of each input feature to represent its importance, but there is no
+          consensus on the definition of "attribution", leading to many competing methods with little systematic
+          evaluation. The lack of ground truth attribution particularly complicates evaluation. To address this,
+          we propose a dataset modification procedure to induce such ground truth. Using this procedure, we evaluate
+          three common interpretability methods: saliency maps, rationales, and attention. We identify several
+          deficiencies and add new perspectives to the growing body of evidence questioning the correctness and
+          reliability of these methods applied on datasets in the wild. We further discuss possible avenues for
+          remedy that could be undertaken in future work.
+        </p>
+      </div>
+
+      <div class='col col-12'>
+        <div class="card bg-light">
+          <div class="card-body" style='padding: 10px; font-size: 12pt; font-family: monospace;'>
+            @inproceedings{zhou2022feature,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;title = {Do Feature Attribution Methods Correctly Attribute Features?},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;author = {Zhou, Yilun and Booth, Serena and Ribeiro, Marco Tulio and Shah, Julie},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;booktitle = {Proceedings of the 36th AAAI Conference on Artificial Intelligence},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;year = {2022},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;month = {Feb},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;publisher = {AAAI}<br>
+            }
+          </div>
+        </div>
+      </div>
+
+      <h3 style="text-align: center; margin-bottom: 15px; margin-top: 30px;">Team</h3>
+      <div class="col col-12 mb-4">
+        <div class='row'>
+          <div class="col col-3" style="text-align: center">
+            <img src="imgs/yilun.jpg" width="100%" style="margin-bottom: 5px">
+            <a href="https://yilun.scripts.mit.edu/">Yilun Zhou</a><br>
+            PhD Student<br>MIT CSAIL<br>
+            <a href = "mailto:yilun@csail.mit.edu">yilun@csail.mit.edu</a>
+          </div>
+          <div class="col col-3" style="text-align: center">
+            <img src="imgs/serena.png" width="100%" style="margin-bottom: 5px">
+            <a href="http://www.slbooth.com/">Serena Booth</a><br>
+            PhD Student<br>MIT CSAIL<br>
+            <a href = "mailto:serenabooth@csail.mit.edu">serenabooth@csail.mit.edu</a>
+          </div>
+          <div class="col col-3" style="text-align: center">
+            <img src="imgs/marco.png" width="100%" style="margin-bottom: 5px">
+            <a href="https://homes.cs.washington.edu/~marcotcr/">Marco Tulio Ribeiro</a><br>
+            Senior Researcher<br>Microsoft Research<br>
+            <a href = "mailto:marcotcr@microsoft.com">marcotcr@microsoft.com</a>
+          </div>
+          <div class="col col-3" style="text-align: center">
+            <img src="imgs/julie.jpg" width="100%" style="margin-bottom: 5px">
+            <a href="https://interactive.mit.edu/">Julie Shah</a><br>
+            Professor<br>MIT CSAIL<br>
+            <a href = "mailto:julie_a_shah@csail.mit.edu">julie_a_shah@csail.mit.edu</a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 mb-5">
+        <div class='row'>
+          This research is supported by the National Science Foundation (NSF) under the grant IIS-1830282.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
