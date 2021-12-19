@@ -17,10 +17,11 @@ Please refer to the `README.md` in the respective folder for detailed informatio
 For any questions, please contact Yilun Zhou at [yilun@mit.edu](mailto:yilun@mit.edu). The paper can be cited as
 
 ```
-@article{zhou2021feature,
+@inproceedings{zhou2021feature,
   title={Do Feature Attribution Methods Correctly Attribute Features?},
   author={Zhou, Yilun and Booth, Serena and Ribeiro, Marco Tulio and Shah, Julie},
-  journal={arXiv preprint arXiv:2104.14403},
-  year={2021}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year = {2022},
+  month = {Feb}
 }
 ```
