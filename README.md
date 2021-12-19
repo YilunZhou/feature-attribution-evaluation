@@ -18,10 +18,11 @@ For any questions, please contact Yilun Zhou at [yilun@mit.edu](mailto:yilun@mit
 
 ```
 @inproceedings{zhou2022feature,
-  title={Do Feature Attribution Methods Correctly Attribute Features?},
-  author={Zhou, Yilun and Booth, Serena and Ribeiro, Marco Tulio and Shah, Julie},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year = {2022},
-  month = {Feb}
+    title = {Do Feature Attribution Methods Correctly Attribute Features?},
+    author = {Zhou, Yilun and Booth, Serena and Ribeiro, Marco Tulio and Shah, Julie},
+    booktitle = {Proceedings of the 36th AAAI Conference on Artificial Intelligence},
+    year = {2022},
+    month = {Feb},
+    publisher = {AAAI}
 }
 ```
