@@ -1,4 +1,4 @@
-# An Evaluation Method for Feature Attribution Methods
+# An Evaluation Method for Feature Attribution Explainers
 
 This is the code repository for the AAAI 2022 paper [_Do Feature Attribution Methods Correctly Attribute Features?_](https://arxiv.org/abs/2104.14403) by Yilun Zhou, Serena Booth, Marco Tulio Ribeiro and Julie Shah. A video presentation is available [here](https://www.youtube.com/watch?v=kAodFw6jvvo).
 
